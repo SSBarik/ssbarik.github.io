@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>My Portfolio</title>
+  <title>My Portfolio | Shashank Shekhar Barik | SSBarik</title>
+  <!-- Fab Icon -->
+  <link rel="icon" type="image/png" href="img/fab.png">
   <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<!-- Bootstrap core CSS -->
@@ -13,29 +15,80 @@
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #8c52ff;
-      background: url(img/bg4.png);
-      background-size: cover;
-      background-repeat: no-repeat; 
-      background-position: center center;
-      background-attachment: fixed;
+    .nav-elevate
+    {
+        -webkit-transition: all 800ms ease-in;
+        -webkit-transform: scale(1); 
+        -ms-transition: all 800ms ease-in;
+        -ms-transform: scale(1); 
+        -moz-transition: all 800ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 800ms ease-in;
+        transform: scale(1);   
+
+    }
+    .nav-elevate:hover
+    {
+        box-shadow: 0px 0px 10px lightgrey;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+   
+    .col-lg-6 {
+      margin-top: 50px;
+    }
+
+    @media only screen and (min-width: 768px) {
+     .col-lg-6 {
+      margin-top: 100px;
+    }
+
+    #ls {
+      margin-top: 200px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container animated zoomInDown" style="height: 100vh">
-    <div class="container flex-center flex-column">
-      <!-- <h1 class="animated fadeInDown mb-2" style="font-family: 'Caveat', cursive;">Welcome <i class="far fa-smile yellow-text"></i></h1> -->
-
-      <img src="img/comingsoon.webp" alt="coming-soon poster" class="img-fluid animated rotateIn mb-1 z-depth-5 rounded">
-
-    </div>
-  </div>
   
+  <!-- Main Body -->
+  <div class="container row">
+    <div class="col-lg-6 text-center text-lg-right">
+      <img src="img/ssb.jpg" atl="My Display Pic" class="img-fluid animated rotateIn delay-2s" style="height: ;width: 70%;">
+      <br>
+      
+    </div>
+    <div id="ls" class="col-lg-6 text-left pl-4 mb-4">
+      <h1 class="animated lightSpeedIn" style="font-family: 'Poiret One', cursive;">DEVELOPMENT is an ART,<br>I do it from SCRATCH.</h1>
+      
+        
+          <a href="https://github.com/SSBarik" target="_blank">
+                      <button type="button" class="btn btn-dark px-3 mb-4 z-depth-0 animated zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                          <span><i class="fab fa-github" style="font-size:25px;"></i></span>
+                      </button>
+                  </a>
+          <a href="https://www.linkedin.com/in/ssbarik/" target="_blank">
+                      <button type="button" class="btn btn-info px-3 mb-4 z-depth-0 animated zoomIn delay-3s fast nav-elevate" style="border-radius: 100px;">
+                          <span><i class="fab fa-linkedin-in" style="font-size:25px;"></i></span>
+                      </button>
+                  </a>
+          <a href="mailto:shashank.barik@gmail.com" target="_blank">
+                      <button type="button" class="btn btn-red px-3 mb-4 z-depth-0 animated zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                          <span><i class="fas fa-envelope" style="font-size:25px;"></i></span>
+                      </button>
+                  </a>
+  </div>
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
