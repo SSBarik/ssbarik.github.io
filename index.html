@@ -16,7 +16,11 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
   <style>
     .nav-elevate
     {
@@ -47,14 +51,27 @@
     .col-lg-6 {
       margin-top: 50px;
     }
-
-    @media only screen and (min-width: 768px) {
-     .col-lg-6 {
-      margin-top: 100px;
+    .col-lg-5 {
+      margin-top: 50px;
     }
 
-    #ls {
-      margin-top: 200px;
+    @media only screen and (min-width: 768px) {
+      .col-lg-6 {
+        margin-top: 100px;
+      }
+    .col-lg-5 {
+        margin-top: 100px;
+      }
+
+      #ls {
+        margin-top: 200px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
@@ -62,32 +79,33 @@
 <body>
 
   
-  <!-- Main Div -->
-  <div class="container row">
-    <div class="col-lg-6 text-center text-lg-right">
-      <img src="img/ssb.jpg" atl="My Display Pic" class="img-fluid animated rotateIn delay-2s" style="width: 70%;">
-      <br>
-      
-    </div>
-    <div id="ls" class="col-lg-6 text-left pl-4 mb-4">
-      <h1 class="animated lightSpeedIn" style="font-family: 'Poiret One', cursive;">DEVELOPMENT is an ART,<br>I do it from SCRATCH.</h1>
-      
+  <!-- Main Body -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5 text-center text-lg-right">
+        <img src="img/ssb.jpg" atl="My Display Pic" class="img-fluid animated rotateIn delay-2s" style="height: ;width: 70%;">
+        <br>
+      </div>
+      <div id="ls" class="col-lg-6 col-12 text-lg-left text-center mb-5">
+        <h1 class="animated lightSpeedIn" style="font-family: 'Merienda', cursive;">DEVELOPMENT is an ART,<br>I do it from SCRATCH.</h1>
         
-          <a href="https://github.com/SSBarik" target="_blank">
-                      <button type="button" class="btn btn-dark px-3 mb-4 z-depth-0 animated zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
-                          <span><i class="fab fa-github" style="font-size:25px;"></i></span>
-                      </button>
-                  </a>
-          <a href="https://www.linkedin.com/in/ssbarik/" target="_blank">
-                      <button type="button" class="btn btn-info px-3 mb-4 z-depth-0 animated zoomIn delay-3s fast nav-elevate" style="border-radius: 100px;">
-                          <span><i class="fab fa-linkedin-in" style="font-size:25px;"></i></span>
-                      </button>
-                  </a>
-          <a href="mailto:shashank.barik@gmail.com" target="_blank">
-                      <button type="button" class="btn btn-red px-3 mb-4 z-depth-0 animated zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
-                          <span><i class="fas fa-envelope" style="font-size:25px;"></i></span>
-                      </button>
-                  </a>
+          
+            <a href="https://github.com/SSBarik" target="_blank">
+                        <button type="button" class="btn btn-dark px-3 mb-4 z-depth-0 animated zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                            <span><i class="fab fa-github" style="font-size:25px;"></i></span>
+                        </button>
+                    </a>
+            <a href="https://www.linkedin.com/in/ssbarik/" target="_blank">
+                        <button type="button" class="btn btn-info px-3 mb-4 z-depth-0 animated zoomIn delay-3s fast nav-elevate" style="border-radius: 100px;">
+                            <span><i class="fab fa-linkedin-in" style="font-size:25px;"></i></span>
+                        </button>
+                    </a>
+            <a href="mailto:shashank.barik@gmail.com" target="_blank">
+                        <button type="button" class="btn btn-red px-3 mb-4 z-depth-0 animated zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                            <span><i class="fas fa-envelope" style="font-size:25px;"></i></span>
+                        </button>
+                    </a>
+    </div>
   </div>
 
   <!-- SCRIPTS -->
