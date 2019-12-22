@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,7 +36,6 @@
     }
     .nav-elevate:hover
     {
-        box-shadow: 0px 0px 10px lightgrey;
         z-index: 2;
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1.1);
@@ -77,12 +77,26 @@
 
 <body>
 
+  <!-- Fav Bottom Nav Menu -->
+  <div class="container-fluid fixed-bottom">
+        <div class="btn-group dropup float-right">
+            <button type="button" class="btn btn-lg btn-info z-depth-1 nav-elevate px-4 mb-3 mr-1 mb-lg-5 mr-lg-4" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="border-radius: 100px;">
+                <span><i class="far fa-star" style="font-size: 25px; color: ;"></i> </span> Live Sites
+            </button>
+            <div class="dropdown-menu z-depth-1 mb-3 mr-4 mr-lg-5 animated fadeIn faster" style="border-radius: 10px; padding:10px;">
+                <a class="dropdown-item nav-elevate" style="background-color: transparent;" href="http://truehito.com/" target="_blank">Truehito.com</a>
+                <a class="dropdown-item nav-elevate" style="background-color: transparent;" href="http://bhimamandali.com/" target="_blank">Bhimamandali.com</a>
+          </div>
+        </div>
+    </div>
+
   
   <!-- Main Body -->
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-5 text-center text-lg-right">
-        <img src="img/dp.jpg" atl="My Display Pic" class="img-fluid animated rotateIn delay-2s" style="width: 70%;">
+        <img src="img/dp.jpg" atl="My Display Pic" class="img-fluid animated rotateIn delay-2s" style="height: ;width: 70%;">
         <br>
       </div>
       <div id="ls" class="col-lg-6 col-12 text-lg-left text-center">
@@ -117,4 +131,5 @@
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
 </body>
+
 </html>
