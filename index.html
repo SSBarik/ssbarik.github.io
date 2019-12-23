@@ -54,7 +54,9 @@
       margin-top: 20px;
     }
 
-    @media only screen and (min-width: 768px) {
+    
+
+    @media only screen and (min-width: 769px) {
       .col-lg-6 {
         margin-top: 100px;
       }
@@ -65,11 +67,24 @@
       #ls {
         margin-top: 200px;
       }
+      
+
+      .btn-warning {
+        font-size: 15px;
+        padding: 10px;
+      }
     }
 
     @media only screen and (max-width: 600px) {
       h1 {
         font-size: 20px;
+      }
+     
+      .btn-warning {
+        font-size: 12px;
+        padding: 8px;
+      }
+
       }
     }
   </style>
@@ -80,14 +95,32 @@
   <!-- Fav Bottom Nav Menu -->
   <div class="container-fluid fixed-bottom">
         <div class="btn-group dropup float-right">
-            <button type="button" class="btn btn-warning z-depth-1 nav-elevate px-3 mb-3" data-toggle="dropdown" aria-haspopup="true"
+            <button type="button" class="btn btn-warning z-depth-1 nav-elevate px-3 mb-2 mb-lg-3" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false" style="border-radius: 100px 100px 0px 100px;">
-                <span><i class="fas fa-star" style="font-size: 20px; color: ;"></i> </span> Live Sites
+                <span><i class="fas fa-star x"></i> </span> Live Sites
             </button>
             <div class="dropdown-menu z-depth-1 mb-3 mr-4 mr-lg-5 animated fadeIn faster" style="border-radius: 6px; padding:10px;">
                 <a class="dropdown-item nav-elevate" style="background-color: transparent;" href="http://truehito.com/" target="_blank">Truehito.com</a>
                 <a class="dropdown-item nav-elevate" style="background-color: transparent;" href="http://bhimamandali.com/" target="_blank">Bhimamandali.com</a>
           </div>
+        </div>
+        <div class="btn-group dropup float-right mr-2">
+          <a href="tell:+91 8763343657" target="_blank">
+                        <button type="button" class="btn btn-sm px-3 z-depth-0 animate zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                            <span><i class="fab fa-facebook" style="font-size:25px; color: ;"></i></span>
+                        </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=919437424760" target="_blank">
+                        <button type="button" class="btn btn-sm px-3 z-depth-0 animate zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                            <span><i class="fab fa-whatsapp" style="font-size:25px; color: green;"></i></span>
+                        </button>
+                    </a>
+                    <a href="tell:+91 8763343657" target="_blank">
+                        <button type="button" class="btn btn-sm px-3 z-depth-0 animate zoomIn delay-3s slow nav-elevate" style="border-radius: 100px;">
+                            <span><i class="fas fa-phone" style="font-size:25px; color: grey ;"></i></span>
+                        </button>
+                    </a>
+                    
         </div>
     </div>
 
@@ -118,7 +151,7 @@
                             <span><i class="fas fa-envelope" style="font-size:20px;"></i></span>
                         </button>
                     </a>
-    </div>
+        </div>
   </div>
 
   <!-- SCRIPTS -->
