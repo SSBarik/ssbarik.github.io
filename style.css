@@ -1,5 +1,5 @@
 body {
-  background-image: url(img/bgg.svg);
+  background-image: url(img/bg.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
@@ -8,40 +8,10 @@ svg {
   width: 70%;
 }
 
- #left {
-  animation: anim 1s ease infinite alternate-reverse;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#right {
-  animation: anim 1s ease infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#up-code {
-  animation: animm 1s ease-in-out infinite alternate-reverse;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#down-code {
-  animation: animm 1s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-
-#tree {
-  animation: anim1 1s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
 .rotate {
    transition: transform 0.6s;
 }
+
 .rotate:hover {
   transform: rotateZ(360deg);
 }
@@ -65,6 +35,82 @@ button:hover {
   transform: scale(1.1,1);
 }
 
+#bigGear {
+  animation: spin 5s ease-in-out infinite reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#smallGear {
+  animation: spin 5s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* #left {
+  animation: anim 1s ease infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#right {
+  animation: anim 1s ease infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+} */
+
+#up-code {
+  animation: anim1 10s ease-out 1s infinite reverse ;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#upc1 {
+  animation: anim1 10s ease-out 2s infinite reverse ;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#upc2 {
+  animation: anim1 10s ease-out 3s infinite reverse ;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#down-code {
+  animation: anim2 10s ease-out 4s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#dc1 {
+  animation: anim2 10s ease-out 5s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#dc2 {
+  animation: anim2 10s ease-out 6s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* #tree {
+  animation: anim1 1s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+} */
+
+
+@keyframes spin {
+  form {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 
 @keyframes anim {
   form {
@@ -76,22 +122,33 @@ button:hover {
   }
 }
 
-@keyframes animm {
-  form {
-    transform: skewX(0deg);
-  }
-
-  to {
-    transform: skewX(20deg);
-  }
-}
-
 @keyframes anim1 {
   form {
-    transform: rotateY(0deg);
+    transform: translate(0px,0px);
   }
 
   to {
-    transform: rotateY(60deg);
+    transform: translate(0px,1000px);
   }
 }
+
+@keyframes anim2 {
+  form {
+    transform: translate(0px,0px);
+  }
+
+  to {
+    transform: translate(0px,-1000px);
+  }
+}
+
+
+/* @keyframes anim1 {
+  form {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(20deg);
+  }
+} */
