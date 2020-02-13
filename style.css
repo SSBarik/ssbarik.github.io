@@ -1,3 +1,9 @@
+body {
+  background-image: url(bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+}
 svg {
   width: 70%;
 }
@@ -26,6 +32,13 @@ svg {
   transform-box: fill-box;
 }
 
+
+#tree {
+  animation: anim1 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
 @keyframes anim {
   form {
     transform: rotateY(0deg);
@@ -43,5 +56,15 @@ svg {
 
   to {
     transform: skewX(20deg);
+  }
+}
+
+@keyframes anim1 {
+  form {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(60deg);
   }
 }
