@@ -1,0 +1,47 @@
+svg {
+  width: 70%;
+}
+
+ #left {
+  animation: anim 1s ease infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#right {
+  animation: anim 1s ease infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#up-code {
+  animation: animm 1s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#down-code {
+  animation: animm 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes anim {
+  form {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(50deg);
+  }
+}
+
+@keyframes animm {
+  form {
+    transform: skewX(0deg);
+  }
+
+  to {
+    transform: skewX(20deg);
+  }
+}
