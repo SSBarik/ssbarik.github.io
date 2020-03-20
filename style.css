@@ -47,6 +47,26 @@ button:hover {
   transform-box: fill-box;
 }
 
+
+
+#board {
+  animation: anim 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#tab {
+  animation: anim1 4s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#ssb {
+  animation: anim2 3s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
 /* #left {
   animation: anim 1s ease infinite alternate-reverse;
   transform-origin: center;
@@ -118,27 +138,27 @@ button:hover {
   }
 
   to {
-    transform: rotateY(50deg);
+    transform: rotateY(30deg);
   }
 }
 
 @keyframes anim1 {
   form {
-    transform: translate(0px,0px);
+    transform: rotateX(0deg);
   }
 
   to {
-    transform: translate(0px,1000px);
+    transform: rotateX(15deg);
   }
 }
 
 @keyframes anim2 {
   form {
-    transform: translate(0px,0px);
+    transform: rotateX(0deg);
   }
 
   to {
-    transform: translate(0px,-1000px);
+    transform: rotateX(20deg);
   }
 }
 
