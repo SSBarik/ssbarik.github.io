@@ -59,7 +59,7 @@ button:hover {
   transform-box: fill-box;
 } */
 
-#up-code {
+/*#up-code {
   animation: anim1 10s ease-out 1s infinite reverse ;
   transform-origin: center;
   transform-box: fill-box;
@@ -82,8 +82,8 @@ button:hover {
   transform-origin: center;
   transform-box: fill-box;
 }
-
-#dc1 {
+*/
+/*#dc1 {
   animation: anim2 10s ease-out 5s infinite;
   transform-origin: center;
   transform-box: fill-box;
@@ -93,7 +93,7 @@ button:hover {
   animation: anim2 10s ease-out 6s infinite;
   transform-origin: center;
   transform-box: fill-box;
-}
+}*/
 
 /* #tree {
   animation: anim1 1s ease-in-out infinite alternate-reverse;
