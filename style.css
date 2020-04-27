@@ -27,12 +27,12 @@ button:hover {
 
 
 
-.live {
+#live {
   background: white;
   transition: transform 0.6s;
 }
 
-.live:hover {
+#live:hover {
   background: #2F2E41;
   color: white;
   transform: scale(1.1,1);
