@@ -49,9 +49,9 @@
     }
 
     .raise {
-      -webkit-box-shadow: 0px 4px 18px 0px rgba(247,247,247,1);
-      -moz-box-shadow: 0px 4px 18px 0px rgba(247,247,247,1);
-      box-shadow: 0px 4px 18px 0px rgba(247,247,247,1);
+      -webkit-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+      -moz-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+      box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
       transition: all 400ms ease-in-out;
     }
     .raise:hover
@@ -89,17 +89,37 @@
 
   <!-- Fav Bottom Nav Menu -->
   <div class="container-fluid fixed-bottom">
-    <div class="btn-group dropup float-right">
-      <button id="live" type="button" class="btn bb z-depth-2 px-3 mb-3 mb-lg-3" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
-          <span><i class="fas fa-stream theme-text mr-2"></i> </span> Explore
+    <div class="btn-group dropup float-right px-3 mb-3 mb-lg-3" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
+      <a href="/index.html">
+        <button 
+          id="live" 
+          type="button" 
+          class="btn z-depth-0 px-3" 
+          style="color: white; background-color: transparent;"
+        >
+          Home
+        </button>
+      </a>
+      <button 
+        id="live" 
+        type="button" 
+        class="btn z-depth-0 px-2 " 
+        style="border-radius: 100px 100px 0px 100px; color: white; background-color:transparent;"
+      >
+        <span><i class="fas fa-rocket theme-text"></i></span>
       </button>
-      <div class="dropdown-menu  z-depth-5 mb-3 mr-4 mr-lg-5 animated fadeIn faster" style="border-radius: 10px; padding:20px; font-size: 1.1em;">
-        <a class="dropdown-item transparent live" href="index.html">Home</a>
-        <a class="dropdown-item transparent theme-text" href="#">Projects</a>
-        <a class="dropdown-item transparent live" href="about.html">About Me</a>
-      </div>
+    <a href="/about.html">
+        <button 
+          id="live" 
+          type="button" 
+          class="btn z-depth-0 px-3" 
+          style="color: white; background-color: transparent;"
+        >
+          About
+        </button>
+      </a>
     </div>
+
   </div>
 
   <!-- Main Body -->

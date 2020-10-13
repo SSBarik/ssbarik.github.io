@@ -57,8 +57,12 @@
     .theme-text {
       color: #6C63FF;
     }
-
-    
+    a {
+      color: #6C63FF;
+    }
+    .badge {
+      background-color: #2F2E41;
+    };
 
     .raise {
       -webkit-box-shadow: 0px 4px 18px 0px rgba(247,247,247,1);
@@ -102,16 +106,35 @@
 
   <!-- Fav Bottom Nav Menu -->
   <div class="container-fluid fixed-bottom">
-    <div class="btn-group dropup float-right">
-      <button id="live" type="button" class="btn bb z-depth-2 px-3 mb-3 mb-lg-3" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
-          <span><i class="fas fa-stream theme-text mr-2"></i> </span> Explore
+    <div class="btn-group dropup float-right px-3 mb-3 mb-lg-3" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
+      <a href="/index.html">
+        <button 
+          id="live" 
+          type="button" 
+          class="btn z-depth-0 px-3" 
+          style="color: white; background-color: transparent;"
+        >
+          Home
+        </button>
+      </a>
+      <a href="/projects.html">
+        <button 
+          id="live" 
+          type="button" 
+          class="btn z-depth-0 px-3" 
+          style="color: white; background-color: transparent;"
+        >
+          Projects
+        </button>
+      </a>
+      <button 
+        id="live" 
+        type="button" 
+        class="btn z-depth-0 px-2" 
+        style="border-radius: 100px 100px 0px 100px; color: white; background-color:transparent;"
+      >
+        <span><i class="fas fa-info theme-text"></i></span>
       </button>
-      <div class="dropdown-menu z-depth-5 mb-3 mr-4 mr-lg-5 animated fadeIn faster" style="border-radius: 10px; padding:20px; font-size: 1.1em;">
-        <a class="dropdown-item transparent live" href="index.html">Home</a>
-        <a class="dropdown-item transparent live" href="projects.html">Projects</a>
-        <a class="dropdown-item transparent theme-text" href="#">About Me</a>
-      </div>
     </div>
   </div>
 
@@ -133,7 +156,10 @@
         <br>Currently on an expedition to develop intuitive & intelligent web applications.</p> 
         <!-- Resume -->
         <div>
-            <a href="https://drive.google.com/file/d/1dKN75ymkeceuqgI2ylnLSEwu-WrG1-K6/view" target="_blank" class="btn black-text go">
+            <a href="https://drive.google.com/file/d/1dKN75ymkeceuqgI2ylnLSEwu-WrG1-K6/view" target="_blank" class="btn black-text go" style=" -webkit-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+            -moz-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+            box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+           ">
                 <span><i class="fas fa-external-link-alt theme-text"></i></span> Resume
             </a>
         <div>
@@ -180,9 +206,53 @@
                 </button>
             </a>
         </div>
-        <!-- Contacts -->
-           
-            
+        <!-- Credits -->
+        <!-- Card -->
+        <div class="mt-5">
+
+          <!-- Card image -->
+          <!-- <div class="">
+            <img class="card-img-top" src="img/fyi.svg"
+              alt="Card image cap">
+          </div> -->
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h5 class="card-title">FYI</h5>
+            <!-- Text -->
+            <p class="card-text">
+              <!-- tag -->
+              <span class="badge">Illustrations</span>
+              <a href="https://undraw.co/" target="_blank">undraw.co</a>
+              |
+              <a href="https://www.manypixels.co/" target="_blank">manypixels.co</a>  
+            </p>
+            <p class="card-text">
+              <!-- tag -->
+              <span class="badge">Design Tool</span>
+              <a href="https://www.figma.com/" target="_blank">figma.com</a>
+            </p>
+            <p class="card-text">
+              <!-- tag -->
+              <span class="badge">Icons</span>
+              <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a>
+            </p>
+            <p class="card-text">
+              <!-- tag -->
+              <span class="badge">Fonts</span>
+              <a href=" https://fonts.google.com/" target="_blank">Google Fonts</a>
+            </p>
+            <!-- Footer -->
+            <p>
+              <span><i class="far fa-copyright theme-text" style="font-size:20px;"></i></span> 
+              2020 <a href="https://github.com/SSBarik/ssbarik.github.io"><strong>SSBarik</strong></a> | <em>Made in India</em>
+            </p>
+        </div>
+
+        </div>
+        <!-- Card -->
     </div>
       
     </div>

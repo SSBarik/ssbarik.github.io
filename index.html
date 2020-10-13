@@ -98,18 +98,51 @@
 
   <!-- Fav Bottom Nav Menu -->
   <div class="container-fluid fixed-bottom">
-    <div class="btn-group dropup float-right">
-      <button id="live" type="button" class="btn z-depth-1 px-3 mb-3 mb-lg-3" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
-      <span><i class="fas fa-stream theme-text mr-2"></i> </span> Explore
+    <div class="btn-group dropup float-right px-3 mb-3 mb-lg-3" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
+      <button 
+        id="live" 
+        type="button" 
+        class="btn z-depth-0 px-2" 
+        style="border-radius: 100px 100px 0px 100px; color: white; background-color:transparent;"
+      >
+        <span><i class="fas fa-home theme-text"></i></span>
       </button>
-      <div class="dropdown-menu  z-depth-5 mb-3 mr-4 mr-lg-5 animated fadeIn faster" style="border-radius: 10px; padding:20px; font-size: 1.1em;">
-        <a class="dropdown-item transparent theme-text" href="#">Home</a>
-        <a class="dropdown-item transparent live" href="projects.html">Projects</a>
-        <a class="dropdown-item transparent live" href="about.html">About Me</a>
-      </div>
+      <a href="/projects.html">
+        <button 
+          id="live" 
+          type="button" 
+          class="btn z-depth-0 px-2" 
+          style="color: white; background-color: transparent;"
+        >
+          Projects
+        </button>
+      </a>
+      <a href="/about.html">
+        <button 
+          id="live" 
+          type="button" 
+          class="btn z-depth-0 px-3" 
+          style="color: white; background-color: transparent;"
+        >
+          About
+        </button>
+      </a>
+      
     </div>
-        <div class="btn-group dropup float-right mr-2">
+
+    <!-- <div class="container-fluid fixed-bottom">
+      <div class="btn-group dropup float-right">
+        <button id="live" type="button" class="btn z-depth-1 px-3 mb-3 mb-lg-3" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
+        <span><i class="fas fa-stream theme-text mr-2"></i> </span> Explore
+        </button>
+        <div class="dropdown-menu  z-depth-5 mb-3 mr-4 mr-lg-5 animated fadeIn faster" style="border-radius: 10px; padding:20px; font-size: 1.1em;">
+          <a class="dropdown-item transparent theme-text" href="#">Home</a>
+          <a class="dropdown-item transparent live" href="projects.html">Projects</a>
+          <a class="dropdown-item transparent live" href="about.html">About Me</a>
+        </div>
+      </div> -->
+        <!-- <div class="btn-group dropup float-right mr-2">
           <a href="https://www.instagram.com/_ssb___/" target="_blank">
                         <button type="button" class="btn btn-sm px-3 z-depth-0" style="border-radius: 100px;">
                             <span><i class="fab fa-instagram rotate" style="font-size:25px; color: #908aff;"></i></span>
@@ -126,7 +159,7 @@
                         </button>
                     </a>
                     
-        </div>
+        </div> -->
   </div>
   
 
@@ -442,9 +475,9 @@
                             <span><i class="fab fa-linkedin-in rotate" style="font-size:20px;"></i></span>
                         </button>
                     </a>
-            <a href="mailto:shashank.barik@gmail.com" target="_blank">
+            <a href="/projects.html" target="">
                         <button type="button" class="btn theme px-3 mb-4 z-depth-1 animated fadeInLeft delay-1s fast" style="border-radius: 100px;">
-                            <span><i class="fas fa-envelope rotate" style="font-size:20px;"></i></span>
+                            <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
                         </button>
                     </a>
       </div>
