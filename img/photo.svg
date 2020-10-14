@@ -1,8 +1,8 @@
-<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="360" cy="360" r="360" fill="#6C63FF" fill-opacity="0.15"/>
-<circle cx="360" cy="360" r="325" fill="#9DADFF"/>
-<circle cx="360" cy="360" r="290" fill="#6C63FF" fill-opacity="0.71"/>
-<circle cx="360" cy="360" r="260" fill="url(#pattern0)"/>
+<svg width="760" height="760" viewBox="0 0 760 760" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="380" cy="380" r="380" fill="#6C63FF" fill-opacity="0.15"/>
+<circle cx="380" cy="380" r="334.4" fill="#9DADFF"/>
+<circle cx="380" cy="380" r="293.867" fill="#6C63FF" fill-opacity="0.66"/>
+<circle cx="380" cy="380" r="265" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0 -0.0792564) scale(0.00195695)"/>
