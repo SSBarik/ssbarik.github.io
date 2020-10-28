@@ -1,0 +1,85 @@
+body {
+  background: #FFF;
+}
+
+.theme-font {
+  font-family: 'Poiret One', cursive;
+} 
+
+.nav {
+  border-radius: 100px 100px 0px 100px; 
+  color: white; 
+  background-color:#2F2E41;
+  transition: transform 0.5s;
+}
+
+.nav-shadow {
+  -webkit-box-shadow: 10px 10px 10px -6px rgba(122,105,138,1);
+  -moz-box-shadow: 10px 10px 10px -6px rgba(122,105,138,1);
+  box-shadow: 10px 10px 10px -6px rgba(122,105,138,1);
+}
+
+.nav:hover {
+  background: #2F2E41;
+  color: white;
+  transform:translateX(-20px);
+}
+
+#live {
+  background: white;
+  transition: transform 0.5s;
+}
+
+#live:hover {
+  background: #2F2E41;
+  color: white;
+  transform: scale(1.25,1);
+}
+
+.live:hover {
+  transform: scale(1.1,1);
+}
+
+.go {
+  -webkit-box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
+  -moz-box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
+  box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
+  transition: all 400ms ease-in-out;
+}
+.go:hover
+{
+  -webkit-box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
+  -moz-box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
+  box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
+  
+  transition: all 200ms ease-in-out;
+  transform: translateX(1.0em);
+}
+
+@charset "UTF-8";
+:root {
+  --star-size: 25px;
+  --star-color: lightgrey;
+  --star-background: #fc0;
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 0.5;
+}
+.Stars::before {
+  content: '★★★★★';
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+

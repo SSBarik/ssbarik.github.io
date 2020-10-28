@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Projects | My Portfolio | Shashank Shekhar Barik | SSBarik</title>
+  <title>Projects | Portfolio | Shashank Shekhar Barik | SSBarik</title>
   <!-- Fab Icon -->
-  <link rel="icon" href="img/coder.svg" type="image/svg" sizes="16x16">
+  <link rel="icon" href="img/dp.svg" type="image/svg" sizes="16x16">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- My CSS -->
@@ -18,27 +18,34 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <style>
-
-    
     .theme {
       background-color: #6C63FF;
       color: white;
     }
+    
+    .theme-text {
+      color: #6C63FF;
+    }
 
-    #main
-    {
+    #main {
       margin-bottom: 100px;
+    }
+
+    .year {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px; 
+      position: absolute; 
+      top: -2px; 
+      right: -3px;
+      background-color: #fdd835;
+      color: #fff; 
+      font-weight: bold;        
     }
 
     h1, 
     h2 {
-      margin-top: 50px;
-      font-family: Poiret One;
-    }
-
-    .theme-text {
-      color: #6C63FF;
-    }
+      margin-top: 40px;
+    }  
 
     .card {
       border: 2px solid #fafafa;
@@ -54,8 +61,7 @@
       box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
       transition: all 400ms ease-in-out;
     }
-    .raise:hover
-    {
+    .raise:hover {
       -webkit-box-shadow: 0px 48px 23px -32px rgba(218,220,227,1);
       -moz-box-shadow: 0px 48px 23px -32px rgba(218,220,227,1);
       box-shadow: 0px 48px 23px -32px rgba(218,220,227,1);
@@ -66,36 +72,33 @@
       transform: translateY(-1.0em);
     }
 
-    .go {
-      -webkit-box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
-      -moz-box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
-      box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
-      transition: all 400ms ease-in-out;
-    }
-    .go:hover
-    {
-      -webkit-box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
-      -moz-box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
-      box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
-      
-      transition: all 200ms ease-in-out;
-      transform: translateX(1.0em);
-    }
+    /* scroll indicator */
+ 
 
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #6C63FF;
+  width: 0%;
+}
   </style>
 </head>
 
 <body>
-
-  <!-- Fav Bottom Nav Menu -->
+  <!-- Navigation -->
   <div class="container-fluid fixed-bottom">
-    <div class="btn-group dropup float-right px-3 mb-3 mb-lg-3 nav-shadow" style="border-radius: 100px 100px 0px 100px; color: white; background-color:#2F2E41;">
+    <div class="btn-group dropup float-right px-3 mb-4 mb-lg-4 nav nav-shadow">
       <a href="/index.html">
         <button 
           id="live" 
           type="button" 
           class="btn z-depth-0 px-3" 
-          style="color: white; background-color: transparent;"
+          style="color:white; background-color: transparent;"
         >
           Home
         </button>
@@ -104,76 +107,88 @@
         id="live" 
         type="button" 
         class="btn z-depth-0 px-2 " 
-        style="border-radius: 100px 100px 0px 100px; color: white; background-color:transparent;"
+        style="background-color: transparent;"
       >
         <span><i class="fas fa-rocket theme-text"></i></span>
       </button>
-    <a href="/about.html">
+      <a href="/about.html">
         <button 
           id="live" 
           type="button" 
           class="btn z-depth-0 px-3" 
-          style="color: white; background-color: transparent;"
+          style="color:white; background-color: transparent;"
         >
           About
         </button>
       </a>
     </div>
+  </div>
 
+  <!-- Scroll Indicator -->
+  <div class="fixed-top">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
   </div>
 
   <!-- Main Body -->
   <div id="main" class="container">
     <!-- Heading -->
     <div class="animated fadeInUp">
-      <h1>PROJECTS</h1>
+      <h1 class="theme-font">PROJECTS</h1>
     </div>
 
     <!-- First Row -->
     <div class="row wow fadeIn">
 
       <!-- P1: Point4875.com -->
-      <div class="col-lg-4">
+      <div id="p1" class="col-lg-4">
         <!-- Card -->
         <div class="card raise mt-5">
-
+         
+       
           <!-- Card image -->
-          <div class="view overlay">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p1.webp"
-              alt="Card image cap">
-            <a href="https://point4875.com/" target="_blank">
+              alt="Card image cap" />
+              <a href="https://point4875.com/" target="_blank">
               <div class="mask rgba-white-slight"></div>
             </a>
           </div>
-
           <!-- Card content -->
           <div class="card-body">
-
+            
             <!-- Title -->
             <h4 class="card-title">Point 4875</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2020</div>
             <!-- Text -->
             <p class="card-text">Currently working on - "Automation and Digitalization of WAT in SSB".     
             </p>
-            <!-- tag -->
-            <!-- <span class="badge badge-success">Primary</span> -->
-            <!-- Button -->
-            <a href="https://point4875.com/" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Take a Tour
+            <!-- Action -->
+            <a href="/projects/point4875.html">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://point4875.com/" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
+            
           </div>
-
         </div>
         <!-- Card -->
       </div>
 
       <!-- P2: Truehito.com  -->
-      <div class="col-lg-4">
+      <div id="p2" class="col-lg-4">
         <!-- Card -->
         <div class="card raise mt-5">
 
           <!-- Card image -->
-          <div class="view overlay">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p2.webp"
               alt="Card image cap">
             <a href="http://truehito.com/" target="_blank">
@@ -186,13 +201,21 @@
 
             <!-- Title -->
             <h4 class="card-title">Truehito</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2019</div>
             <!-- Text -->
             <p class="card-text">The official web application of Truehito Consulting Group(TCG). </p>
-            <!-- Button -->
-            <a href="http://truehito.com/" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Take a Tour
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="btn disabled theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="http://truehito.com/" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
@@ -200,12 +223,12 @@
       </div>
 
       <!-- P3: Bhimamandali.com -->
-      <div class="col-lg-4">
+      <div id="p3" class="col-lg-4">
         <!-- Card -->
         <div class="card raise mt-5">
 
           <!-- Card image -->
-          <div class="view overlay">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p3.webp"
               alt="Card image cap">
             <a href="http://bhimamandali.com/" target="_blank">
@@ -218,15 +241,21 @@
 
             <!-- Title -->
             <h4 class="card-title">Bhima Mandali</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2017</div>
             <!-- Text -->
-            <p class="card-text">An informative website to acknowledge - The Ancient Civilization of Odisha.
-              
-            </p>
-            <!-- Button -->
-            <a href="http://bhimamandali.com/" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Take a Tour
+            <p class="card-text">An informative website to acknowledge - The Ancient Civilization of Odisha.</p>
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="http://bhimamandali.com/" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
@@ -239,12 +268,12 @@
     <div class="row wow fadeIn">
 
       <!-- P4: Vue Speech Input -->
-      <div class="col-lg-4">
+      <div id="p4" class="col-lg-4">
         <!-- Card -->
         <div class="card raise mt-5">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p4.webp"
               alt="Card image cap">
             <a href="https://vue-speech-input.herokuapp.com/" target="_blank">
@@ -257,15 +286,28 @@
 
             <!-- Title -->
             <h4 class="card-title">Vue Speech Input</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2020</div>
             <!-- Text -->
             <p class="card-text">A component to get speech input in Vue. 
               Under the hood it uses the Web Speech API. 
             </p>
-            <!-- Button -->
-            <a href="https://vue-speech-input.herokuapp.com/" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Check
+            <!-- Action -->
+            <a href="https://github.com/SSBarik" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://github.com/SSBarik/vue-speech-input" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-github rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
+            <a href="https://vue-speech-input.herokuapp.com/" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
@@ -273,12 +315,12 @@
       </div>
 
       <!-- P5: Shortify  -->
-      <div class="col-lg-4">
+      <div id="p5" class="col-lg-4">
         <!-- Card -->
         <div class="card raise mt-5">
 
           <!-- Card image -->
-          <div class="view overlay  p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p5.webp"
               alt="Card image cap">
             <a href="https://shortify-url-shortner.herokuapp.com/" target="_blank">
@@ -291,15 +333,23 @@
 
             <!-- Title -->
             <h4 class="card-title">Shortify</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2020</div>
             <!-- Text -->
             <p class="card-text">A basic URL shortner powered by Bitly API in Nuxt.js. 
               
             </p>
-            <!-- Button -->
-            <a href="https://shortify-url-shortner.herokuapp.com/" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Check
+            <!-- Action -->
+            <a href="https://github.com/SSBarik/url-shortner" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-github rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://shortify-url-shortner.herokuapp.com/" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
@@ -307,12 +357,12 @@
       </div>
 
       <!-- P6: Interactive Card Payment -->
-      <div class="col-lg-4">
+      <div id="p6" class="col-lg-4">
         <!-- Card -->
         <div class="card mt-5 raise">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p6.webp"
               alt="Card image cap">
             <a href="https://ssbarik.github.io/tester/" target="_blank">
@@ -325,13 +375,22 @@
 
             <!-- Title -->
             <h4 class="card-title">Interactive Payment UI</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2019</div>
             <!-- Text -->
             <p class="card-text">An interactive UI for card payment details input in a form for a freelance project.</p>
             <!-- Button -->
-            <a href="https://ssbarik.github.io/tester/" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Check
+            <!-- Action -->
+            <a href="https://github.com/SSBarik/tester" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-github rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://ssbarik.github.io/tester/" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-rocket rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
@@ -344,12 +403,12 @@
     <div class="row wow fadeIn">
 
       <!-- P7: Eswaad.in -->
-      <div class="col-lg-4">
+      <div id="p7" class="col-lg-4">
         <!-- Card -->
         <div class="card mt-5 raise">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p7.webp"
               alt="Card image cap">
             <a href="#!" target="">
@@ -362,14 +421,17 @@
 
             <!-- Title -->
             <h4 class="card-title">eSwaad</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2018</div>
             <!-- Text -->
             <p class="card-text">Ventured an online native food delivery startup and was
               responsible for the technical aspects.</p>
-            <!-- Button -->
-            <a href="#!" target="" class="btn float-right go">
-              <span><i class="fas fa-circle-notch grey-text"></i> </span>Know More
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
           </div>
 
         </div>
@@ -377,12 +439,12 @@
       </div>
 
       <!-- P8: Vimsar Online OPD Registration  -->
-      <div class="col-lg-4">
+      <div id="p8" class="col-lg-4">
         <!-- Card -->
         <div class="card raise mt-5">
 
           <!-- Card image -->
-          <div class="view overlay  p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p8.webp"
               alt="Card image cap">
             <a href="#!" target="">
@@ -395,28 +457,31 @@
 
             <!-- Title -->
             <h4 class="card-title">OPD e-Registration</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2018</div>
             <!-- Text -->
             <p class="card-text">An initiative to digitalize the OPD registration system of VIMSAR.  
               
             </p>
-            <!-- Button -->
-            <a href="#!" target="" class="btn float-right go">
-              <span><i class="fas fa-circle-notch grey-text"></i> </span>know More
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
-          </div>
+           </div>
 
         </div>
         <!-- Card -->
       </div>
 
       <!-- P9: SUIIT Hub -->
-      <div class="col-lg-4">
+      <div id="p9" class="col-lg-4">
         <!-- Card -->
         <div class="card mt-5 raise">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p9.webp"
               alt="Card image cap">
             <a href="https://play.google.com/store/apps/developer?id=SNSKRIT&hl=en" target="_blank">
@@ -429,26 +494,31 @@
 
             <!-- Title -->
             <h4 class="card-title">SUIIT Hub</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2019</div>
             <!-- Text -->
             <p class="card-text">Created a project sharing platform among students of SUIIT.</p>
-            <!-- Button -->
-            <a href="#!" target="" class="btn float-right go">
-              <span><i class="fas fa-circle-notch grey-text"></i> </span>know More
+            <!-- Action -->
+            <a href="https://github.com/SSBarik/wt_assignment " target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-github rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
           </div>
-
         </div>
         <!-- Card -->
       </div>
+    </div>
 
+    <!-- Fourth Row -->
+    <div class="row wow fadeIn">
       <!-- P10: Sambalpur City Bus -->
-      <div class="col-lg-4">
+      <div id="p10" class="col-lg-4">
         <!-- Card -->
         <div class="card mt-5 raise">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p10.webp"
               alt="Card image cap">
             <a href="https://play.google.com/store/apps/details?id=com.SambalpurCityBus.silu.testerscb" target="_blank">
@@ -461,25 +531,33 @@
 
             <!-- Title -->
             <h4 class="card-title">Sambalpur City Bus</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2018</div>
             <!-- Text -->
             <p class="card-text">Android app that provides prior information regarding the City Bus timings and routes.</p>
-            <!-- Button -->
-            <a href="https://play.google.com/store/apps/details?id=com.SambalpurCityBus.silu.testerscb" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Explore
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://play.google.com/store/apps/details?id=com.SambalpurCityBus.silu.testerscb" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-google-play rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
         <!-- Card -->
       </div>
       <!-- P11: SUIIT Guide -->
-      <div class="col-lg-4">
+      <div id="p11" class="col-lg-4">
         <!-- Card -->
         <div class="card mt-5 raise">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p11.webp"
               alt="Card image cap">
             <a href="https://play.google.com/store/apps/details?id=com.suiitguide.silu.suiitguide" target="_blank">
@@ -492,25 +570,33 @@
 
             <!-- Title -->
             <h4 class="card-title">SUIIT Guide</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2018</div>
             <!-- Text -->
             <p class="card-text">Android app acting as a Virtual Local Guide for day-to-day complications of SUIITians.</p>
-            <!-- Button -->
-            <a href="https://play.google.com/store/apps/details?id=com.suiitguide.silu.suiitguide" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Explore
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://play.google.com/store/apps/details?id=com.suiitguide.silu.suiitguide" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-google-play rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
         <!-- Card -->
       </div>
-      <!-- P9: DAv Burla -->
-      <div class="col-lg-4">
+      <!-- P9: DAV Burla -->
+      <div id="p12" class="col-lg-4">
         <!-- Card -->
         <div class="card mt-5 raise">
 
           <!-- Card image -->
-          <div class="view overlay p-4">
+          <div class="view overlay p-2">
             <img class="card-img-top" src="img/p12.webp"
               alt="Card image cap">
             <a href="https://play.google.com/store/apps/details?id=sdn.dav7" target="_blank">
@@ -523,13 +609,21 @@
 
             <!-- Title -->
             <h4 class="card-title">DAV Burla</h4>
+            <!-- Year ESTD -->
+            <div class="year px-2 z-depth-1">2017</div>
             <!-- Text -->
             <p class="card-text">Official School App of DAV, Burla. My first project and first step into app development.</p>
-            <!-- Button -->
-            <a href="https://play.google.com/store/apps/details?id=sdn.dav7" target="_blank" class="btn float-right go">
-              <span><i class="fas fa-circle-notch green-text"></i> </span>Explore
+            <!-- Action -->
+            <a href="#" target="_blank" class="disabled">
+              <button type="button" class="disabled btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fas fa-info-circle rotate" style="font-size:20px;"></i></span>
+              </button>
             </a>
-
+            <a href="https://play.google.com/store/apps/details?id=sdn.dav7" target="_blank">
+              <button type="button" class="btn theme px-3 z-depth-1" style="border-radius: 100px;">
+                  <span><i class="fab fa-google-play rotate" style="font-size:20px;"></i></span>
+              </button>
+            </a>
           </div>
 
         </div>
@@ -541,6 +635,7 @@
   </div>
 
   <!-- SCRIPTS -->
+  
   <!-- JQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Bootstrap tooltips -->
@@ -551,7 +646,19 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
   <script type="text/javascript">
 		new WOW().init();
-	</script>
+  </script>
+<!-- Scroll Indicator -->
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
 </body>
 
 </html>

@@ -1,11 +1,30 @@
 body {
-  background-image: url(img/bgi.svg);
+  background-image: url(img/bg.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
 }
+
+.theme-font {
+  font-family: 'Poiret One', cursive;
+} 
+
 svg {
   width: 70%;
+}
+
+.nav {
+  border-radius: 100px 100px 0px 100px; 
+  color: white; 
+  background-color:#2F2E41;
+  transition: transform 0.5s;
+}
+
+.nav:hover {
+  background: #2F2E41;
+  color: white;
+  transform:translatey(-10px);
+  /* transform:translatex(-10px); */
 }
 
 .nav-shadow {
@@ -31,6 +50,21 @@ button:hover {
 }
 
 
+.go {
+  -webkit-box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
+  -moz-box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
+  box-shadow: 4px 3px 12px -2px rgba(227,224,227,1);
+  transition: all 400ms ease-in-out;
+}
+.go:hover
+{
+  -webkit-box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
+  -moz-box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
+  box-shadow: -5px 6px 13px 0px rgba(214,210,214,1);
+  
+  transition: all 200ms ease-in-out;
+  transform: translateX(1.0em);
+}
 
 #live {
   background: white;
@@ -47,25 +81,23 @@ button:hover {
   transform: scale(1.1,1);
 }
 
-#bigGear {
+/* #bigGear {
   animation: spin 5s ease-in-out infinite reverse;
   transform-origin: center;
   transform-box: fill-box;
 }
 
 #smallGear {
-  animation: spin 5s ease-in-out infinite;
+  animation: spin 5s ease-out infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
-
-
 
 #board {
   animation: anim 3s ease-in-out infinite alternate;
   transform-origin: center;
   transform-box: fill-box;
-}
+} */
 
 #tab {
   animation: anim1 4s ease-in-out infinite alternate-reverse;
@@ -73,65 +105,48 @@ button:hover {
   transform-box: fill-box;
 }
 
-#ssb {
+/* #ssb {
   animation: anim2 3s ease-in-out infinite alternate-reverse;
   transform-origin: center;
   transform-box: fill-box;
-}
-
-/* #left {
-  animation: anim 1s ease infinite alternate-reverse;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#right {
-  animation: anim 1s ease infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
 } */
 
-/*#up-code {
-  animation: anim1 10s ease-out 1s infinite reverse ;
+#circle {
+  animation: anim2 2s ease-in-out infinite alternate-reverse;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-#upc1 {
-  animation: anim1 10s ease-out 2s infinite reverse ;
+
+#inner {
+  opacity: 1;
+  animation: fade 0.1s ease-in-out linear;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-#upc2 {
-  animation: anim1 10s ease-out 3s infinite reverse ;
+#inner {
+  opacity: 1;
+  animation: fade 6s ease-in-out infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-#down-code {
-  animation: anim2 10s ease-out 4s infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-*/
-/*#dc1 {
-  animation: anim2 10s ease-out 5s infinite;
+#middle {
+  opacity: 1;
+  animation: fade 6s ease-in-out infinite;
+  animation-delay: 2s;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-#dc2 {
-  animation: anim2 10s ease-out 6s infinite;
+#outer {
+  opacity: 1;
+  animation: fade 6s ease-in-out infinite;
+  animation-delay: 4s;
   transform-origin: center;
   transform-box: fill-box;
-}*/
-
-/* #tree {
-  animation: anim1 1s ease-in-out infinite alternate-reverse;
-  transform-origin: center;
-  transform-box: fill-box;
-} */
+}
 
 
 @keyframes spin {
@@ -142,6 +157,30 @@ button:hover {
   to {
     transform: rotateZ(360deg);
   }
+}
+
+@keyframes wow {
+  form {
+    transform: scale(-1, -1);
+  }
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+@keyframes fade {
+  form {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
 }
 
 @keyframes anim {
@@ -166,11 +205,11 @@ button:hover {
 
 @keyframes anim2 {
   form {
-    transform: rotateX(0deg);
+    transform: rotateZ(0deg);
   }
 
   to {
-    transform: rotateX(20deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -184,3 +223,31 @@ button:hover {
     transform: rotateZ(20deg);
   }
 } */
+
+@charset "UTF-8";
+:root {
+  --star-size: 25px;
+  --star-color: lightgrey;
+  --star-background: #fc0;
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 0.5;
+}
+.Stars::before {
+  content: '★★★★★';
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
