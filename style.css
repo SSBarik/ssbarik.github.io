@@ -118,12 +118,6 @@ button:hover {
 }
 
 
-#inner {
-  opacity: 1;
-  animation: fade 0.1s ease-in-out linear;
-  transform-origin: center;
-  transform-box: fill-box;
-}
 
 #inner {
   opacity: 1;
