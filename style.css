@@ -28,10 +28,19 @@ svg {
 }
 
 .nav-shadow {
+  -webkit-box-shadow: 8px 8px 12px -6px rgba(122,114,255,1);
+  -moz-box-shadow: 8px 8px 12px -6px rgba(122,114,255,1);
+  box-shadow: 8px 8px 12px -6px rgba(122,114,255,1);
+/* -webkit-box-shadow: 6px 6px 12px -6px rgba(122,114,255,1);
+-moz-box-shadow: 6px 6px 12px -6px rgba(122,114,255,1);
+box-shadow: 6px 6px 12px -6px rgba(122,114,255,1);   */
+}
+
+/* .nav-shadow {
   -webkit-box-shadow: 10px 10px 10px -6px rgba(122,105,138,1);
   -moz-box-shadow: 10px 10px 10px -6px rgba(122,105,138,1);
   box-shadow: 10px 10px 10px -6px rgba(122,105,138,1);
-}
+} */
 
 .rotate {
    transition: transform 0.6s;
