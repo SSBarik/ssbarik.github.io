@@ -74,6 +74,11 @@ SSSssshhhhh!! The code starts below -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <style>
+    body {
+      background-image: url(img/xbg.svg);
+      background-position: right;
+    }
+
     .theme {
       background-color: #7A72FF;
       color: white;
@@ -101,8 +106,9 @@ SSSssshhhhh!! The code starts below -->
     }
 
     @media only screen and (min-width: 769px) { 
-      .left-fixed-lg {
+      .left-fixed-sm {
         position: fixed;
+        right: 10px;
       }  
     }
     
@@ -169,7 +175,7 @@ SSSssshhhhh!! The code starts below -->
 <body>
   <!-- Navigation -->
   <div class="container-fluid fixed-bottom">
-    <div class="btn-group dropup float-right px-3 mb-4 mb-lg-4 nav nav-shadow">
+    <div class="btn-group dropup float-right px-3 mb-3 mb-lg-4 nav nav-shadow">
       <a href="/index.html">
         <button 
           id="live" 
@@ -215,7 +221,8 @@ SSSssshhhhh!! The code starts below -->
     <!-- First Row -->
     <div class="row">
       <!-- Static Left @lg -->
-      <div class="col-lg-4 text-center mb-5 left-fixed-lg">
+      
+      <div class="col-sm-4 text-center mb-5 left-fixed-sm">
         <!-- <img src="img/ssb.svg" alt="display picture" class="img-fluid animated fadeIn" style="width: 70%" /> -->
         <svg class="animated fadeIn slow" viewBox="0 0 760 760" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <circle cx="380" cy="380" r="380" fill="#7A72FF" fill-opacity="0.15"/>
@@ -247,21 +254,22 @@ SSSssshhhhh!! The code starts below -->
         </p>
       </div>
 
-      <div class="col-lg-7 offset-lg-4">
+      <div class="col-sm-7">
         <p class="txt theme-font wow fadeIn">Hello! Thanks for stopping by.</p>
-        <p class="wow fadeIn">I'm a creative team player seeking to use my leadership qualities & technical competencies to create solutions that matter.
-          
-        <br>Currently inculcating strong learning & work ethics to develop intuitive & intelligent web applications.
-      </p> 
+        <p class="wow fadeIn">
+          I'm a creative team player seeking to use my leadership qualities & technical     competencies to create solutions that matter.
+            
+          <br>Currently inculcating strong learning & work ethics to develop intuitive & intelligent web applications.
+        </p> 
         <!-- Resume -->
         <div>
-            <a href="https://drive.google.com/file/d/1dKN75ymkeceuqgI2ylnLSEwu-WrG1-K6/view" target="_blank" class="btn black-text go" style=" -webkit-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
-            -moz-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
-            box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
-           ">
-                <span><i class="fas fa-external-link-alt theme-text"></i></span> Resume
-            </a>
-        <div>
+          <a href="https://drive.google.com/file/d/1dKN75ymkeceuqgI2ylnLSEwu-WrG1-K6/view" target="_blank" class="btn black-text go" style=" -webkit-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+          -moz-box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+          box-shadow: 0px 4px 14px 0px rgba(222,216,230,1);
+          ">
+              <span><i class="fas fa-external-link-alt theme-text"></i></span> Resume
+          </a>
+        </div>
         <!-- Contacts -->
         <div class="mt-4">
             <a href="https://github.com/SSBarik" target="_blank">
@@ -304,58 +312,60 @@ SSSssshhhhh!! The code starts below -->
                     <span><i class="fab fa-instagram rotate" style="font-size:20px;"></i></span>
                 </button>
             </a>
+          </div>
+          <!-- Credits -->
+          <!-- Card -->
+          <div class="mt-5">
+
+            <!-- Card image -->
+            <!-- <div class="">
+              <img class="card-img-top" src="img/fyi.svg"
+                alt="Card image cap">
+            </div> -->
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h5 class="card-title">FYI</h5>
+              <!-- Text -->
+              <p class="card-text">
+                <!-- tag -->
+                <span class="badge">Illustrations</span>
+                <a href="https://undraw.co/" target="_blank">undraw.co</a>
+              </p>
+              <p class="card-text">
+                <!-- tag -->
+                <span class="badge">Design Tool</span>
+                <a href="https://www.figma.com/" target="_blank">figma.com</a>
+              </p>
+              <p class="card-text">
+                <!-- tag -->
+                <span class="badge">Icons</span>
+                <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a>
+              </p>
+              <p class="card-text">
+                <!-- tag -->
+                <span class="badge">Fonts</span>
+                <a href=" https://fonts.google.com/" target="_blank">Google Fonts</a>
+              </p>
+              <!-- Footer -->
+              <p>
+                <span class="darkgrey-text">No <span><i class="far fa-copyright"></i></span> issues.</span>
+                <br>
+                Feel free to copy. If you need any help, ping me ! 
+                <!-- <br><strong>Made in India</strong> -->
+              </p>
+              <img class="wow fadeInUp" src="img/madeInIndia.webp" style="width: 10em;" alt="Made in India">
+          </div>
+
         </div>
-        <!-- Credits -->
         <!-- Card -->
-        <div class="mt-5">
+      </div>
 
-          <!-- Card image -->
-          <!-- <div class="">
-            <img class="card-img-top" src="img/fyi.svg"
-              alt="Card image cap">
-          </div> -->
-
-          <!-- Card content -->
-          <div class="card-body">
-
-            <!-- Title -->
-            <h5 class="card-title">FYI</h5>
-            <!-- Text -->
-            <p class="card-text">
-              <!-- tag -->
-              <span class="badge">Illustrations</span>
-              <a href="https://undraw.co/" target="_blank">undraw.co</a>
-            </p>
-            <p class="card-text">
-              <!-- tag -->
-              <span class="badge">Design Tool</span>
-              <a href="https://www.figma.com/" target="_blank">figma.com</a>
-            </p>
-            <p class="card-text">
-              <!-- tag -->
-              <span class="badge">Icons</span>
-              <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a>
-            </p>
-            <p class="card-text">
-              <!-- tag -->
-              <span class="badge">Fonts</span>
-              <a href=" https://fonts.google.com/" target="_blank">Google Fonts</a>
-            </p>
-            <!-- Footer -->
-            <p>
-              <span class="darkgrey-text">No <span><i class="far fa-copyright"></i></span> issues.</span>
-              <br>
-              Feel free to copy. If you need any help, ping me ! 
-              <!-- <br><strong>Made in India</strong> -->
-            </p>
-            <img class="wow fadeInUp" src="img/madeInIndia.webp" style="width: 10em;" alt="Made in India">
-        </div>
-
-        </div>
-        <!-- Card -->
-    </div>
       
-    </div>
+      
+  </div>
 
     
   </div>

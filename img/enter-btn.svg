@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="enter-btn">
+<g id="Rectangle 4" filter="url(#filter0_d)">
+<rect x="2" y="2" width="116" height="116" rx="10" fill="#7A72FF"/>
+</g>
+<g id="enter">
+<g id="enter-icon">
+<g id="enter_2">
+<g id="arrow">
+<line id="Line 2" x1="54.4143" y1="94.9952" x2="25.6379" y2="66.3119" stroke="white" stroke-width="15"/>
+<line id="Line 3" y1="-7.5" x2="40.6302" y2="-7.5" transform="matrix(-0.708251 0.705961 0.705961 0.708251 59.7109 46)" stroke="white" stroke-width="15"/>
+</g>
+<line id="Line 3_2" x1="92.4336" y1="25" x2="92.4336" y2="76" stroke="white" stroke-width="15"/>
+<line id="Line 4" x1="35.9336" y1="68.5" x2="92.9336" y2="68.5" stroke="white" stroke-width="15"/>
+</g>
+<path id="Polygon 1" d="M15.8973 67.9999L24.9352 59.4999L24.935 76L15.8973 67.9999Z" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="3"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.477805 0 0 0 0 0.445833 0 0 0 0 1 0 0 0 0.49 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
