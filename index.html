@@ -77,6 +77,7 @@ SSSssshhhhh!! The code starts below -->
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <style>
+
     .theme {
       background-color: #7A72FF;
       color: white;
@@ -94,19 +95,26 @@ SSSssshhhhh!! The code starts below -->
     /* .dark {
       background-color: #2F2E41;
     } */
+    @media only screen and (max-width: 769px) {
 
-    .col-lg-6 {
-      margin-top: 20px;
-    }
-    .col-lg-5 {
-      margin-top: 20px;
-    }
-    .i {
-      margin-top: 100px;
+      .mid {
+        margin-top: 100px;
+      }
+      .i {
+        margin-top: 25px;
+      }
     }
     
     @media only screen and (min-width: 769px) {
-      .col-lg-6 {
+
+      .mid {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      /* .col-lg-6 {
         margin-top: 100px;
       }
 
@@ -116,7 +124,7 @@ SSSssshhhhh!! The code starts below -->
 
       #intro {
         margin-top: 150px;
-      }
+      } */
 
     }
 
@@ -185,8 +193,8 @@ SSSssshhhhh!! The code starts below -->
   
   <!-- Main Body -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6 col-12 i text-center text-lg-right animated fadeIn slow">
+    <div class="row mid">
+      <div class="col-lg-6 col-12 text-center text-lg-right animated fadeIn slow">
         <!-- <svg viewBox="0 0 1111 858" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="dev art">
           <g clip-path="url(#clip0)">
@@ -731,8 +739,8 @@ SSSssshhhhh!! The code starts below -->
         <br>
       </div>
 
-      <div id="intro" class="col-lg-5 col-12 text-lg-left text-center">
-        <h1 class="animated fadeInUp mb-4 theme-font">DEVELOPMENT is an ART,<br><small>I'm an emerging ARTIST.</small></h1>
+      <div class="col-lg-6 col-12 text-lg-left text-center">
+        <h1 class="animated i fadeInUp mb-4 theme-font">DEVELOPMENT is an ART,<br><small>I'm an emerging ARTIST.</small></h1>
         <!-- <h1 class="animated fadeInUp mb-4 theme-font" style="font-weight: bold; color: #5a5a5a;"  ><span class="theme-text">DEVELOPMENT</span> is an <span class="theme-text">ART</span>,<br>I'm an emerging <span class="theme-text">ARTIST</span>.</h1> -->
         <!-- <img src="img/tagline.svg" alt="projects button" class="img-fluid animated fadeIn" style="width: 100%" /> -->
         <!-- <img src="img/btn.svg" alt="projects button" class="img-fluid animated fadeIn" style="width: 50%" /> -->
@@ -767,7 +775,7 @@ SSSssshhhhh!! The code starts below -->
           </svg> -->
       <div class="cd">    
       <a href="/projects.html">
-        <svg class="animated fadeInUp slow" style="width: 40%" viewBox="0 0 566 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="animated fadeInUp slow" style="width: 30%" viewBox="0 0 566 128" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="cd">
           <g id="btn_2">
           <g id="btn_3" filter="url(#filter0_d)">
